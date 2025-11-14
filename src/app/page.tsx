@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -7,7 +7,7 @@ import TagAbout from '@/components/sections/about/TagAbout';
 import FeatureCardOne from '@/components/sections/feature/FeatureCardOne';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
-import MetricCardOne from '@/components/sections/metric/MetricCardOne';
+import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
@@ -15,7 +15,7 @@ import FaqBase from '@/components/sections/faq/FaqBase';
 import BlogCardOne from '@/components/sections/blog/BlogCardOne';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { Code, Crown, DollarSign, Globe, HelpCircle, MessageCircle, Package, Shield, Smartphone, Sparkles, Star, TrendingUp, Users, Zap } from "lucide-react";
+import { Code, Crown, DollarSign, Globe, HelpCircle, MessageCircle, Package, Shield, Smartphone, Sparkles, Star, TrendingUp, Users, Zap, Twitter, Linkedin, Github, Instagram, Dribbble, Youtube, BookOpen, Award } from "lucide-react";
 
 export default function Home() {
   return (
@@ -267,11 +267,11 @@ export default function Home() {
               imageAlt: "Sarah Chen, CEO & Co-founder",
               socialLinks: [
                 {
-                  icon: "Twitter",
+                  icon: Twitter,
                   url: "https://twitter.com"
                 },
                 {
-                  icon: "Linkedin",
+                  icon: Linkedin,
                   url: "https://linkedin.com"
                 }
               ]
@@ -285,11 +285,11 @@ export default function Home() {
               imageAlt: "Marcus Rodriguez, CTO",
               socialLinks: [
                 {
-                  icon: "Github",
+                  icon: Github,
                   url: "https://github.com"
                 },
                 {
-                  icon: "Linkedin",
+                  icon: Linkedin,
                   url: "https://linkedin.com"
                 }
               ]
@@ -303,11 +303,11 @@ export default function Home() {
               imageAlt: "Emma Thompson, Head of Design",
               socialLinks: [
                 {
-                  icon: "Instagram",
+                  icon: Instagram,
                   url: "https://instagram.com"
                 },
                 {
-                  icon: "Dribbble",
+                  icon: Dribbble,
                   url: "https://dribbble.com"
                 }
               ]
@@ -366,6 +366,7 @@ export default function Home() {
           title="Trusted by Industry Leaders"
           description="Join thousands of companies that rely on our platform"
           tag="Partners"
+          tagIcon={Award}
           textboxLayout="default"
           logos={[
             "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32m5rRdd38TAyU0DZCqvrl288SF/uploaded-1763147742401-3z530kyw.jpg",
@@ -424,6 +425,7 @@ export default function Home() {
           title="Latest Insights"
           description="Thoughts and stories from our team"
           tag="Blog"
+          tagIcon={BookOpen}
           textboxLayout="default"
           animationType="slide-up"
           blogs={[
@@ -590,22 +592,22 @@ export default function Home() {
           ]}
           socialLinks={[
             {
-              icon: "Twitter",
+              icon: Twitter,
               href: "https://twitter.com/apple",
               ariaLabel: "Follow us on Twitter"
             },
             {
-              icon: "Instagram",
+              icon: Instagram,
               href: "https://instagram.com/apple",
               ariaLabel: "Follow us on Instagram"
             },
             {
-              icon: "Youtube",
+              icon: Youtube,
               href: "https://youtube.com/apple",
               ariaLabel: "Subscribe to our YouTube channel"
             },
             {
-              icon: "Linkedin",
+              icon: Linkedin,
               href: "https://linkedin.com/company/apple",
               ariaLabel: "Connect with us on LinkedIn"
             }
